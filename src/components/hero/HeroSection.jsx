@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from '../layout/Navbar';
 import TechModal from './TechModal';
 import portraitImage from '../../assets/hero-portrait.png'; 
-import resumePdf from "../../assets/nithilan_resume.pdf";
 
 const HeroSection = () => {
   const [selectedTech, setSelectedTech] = useState(null);
@@ -92,9 +91,12 @@ const HeroSection = () => {
           >
             Explore Projects
           </a>
+          {/* THE FIX IS RIGHT HERE: Pointing directly to /resume.pdf */}
           <a 
-            href={resumepdf} // 2. USE THE IMPORTED VARIABLE HERE
+            href="/resume.pdf" 
             download="Nithilan_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-center px-6 py-3.5 rounded-full bg-white/10 text-white font-black text-[10px] md:text-xs uppercase tracking-widest border border-white/20 hover:bg-white/20 hover:-translate-y-0.5 transition-all"
           >
             Download Resume
