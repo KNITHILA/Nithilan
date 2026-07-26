@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  @keyframes glow-drop {
+    0% { top: -10%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 110%; opacity: 0; }
+  }
+  .animate-glow-drop {
+    animation: glow-drop 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+}
