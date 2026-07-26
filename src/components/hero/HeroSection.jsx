@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../layout/Navbar';
 import TechModal from './TechModal';
 import portraitImage from '../../assets/hero-portrait.png'; 
-import resumePdf from '../../assets/Nithilan_Resume.pdf'; // 1. IMPORT THE PDF HERE
+import Resume from '../../assets/Nithilan_Resume.pdf'; // 1. IMPORT THE PDF HERE
 
 const HeroSection = () => {
   const [selectedTech, setSelectedTech] = useState(null);
