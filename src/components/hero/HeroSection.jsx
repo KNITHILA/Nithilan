@@ -93,7 +93,7 @@ const HeroSection = () => {
             Explore Projects
           </a>
           <a 
-            href={resumePdf} // 2. USE THE IMPORTED VARIABLE HERE
+            href={Resume} // 2. USE THE IMPORTED VARIABLE HERE
             download="Nithilan_Resume.pdf"
             className="text-center px-6 py-3.5 rounded-full bg-white/10 text-white font-black text-[10px] md:text-xs uppercase tracking-widest border border-white/20 hover:bg-white/20 hover:-translate-y-0.5 transition-all"
           >
